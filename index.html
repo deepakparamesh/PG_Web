@@ -1,1074 +1,199 @@
 <!DOCTYPE html>
+<html>
 
-<html lang="en">
-<!--<![endif]-->
-
-
-<!-- Mirrored from www.webstrot.com/html/jobpro/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Jan 2018 11:29:24 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8" />
-    <title>Room Mate</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta name="description" content="Job Pro" />
-    <meta name="keywords" content="Job Pro" />
-    <meta name="author" content="" />
-    <meta name="MobileOptimized" content="320" />
-    <!--srart theme style -->
-    <link rel="stylesheet" type="text/css" href="css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css" />
-    <link rel="stylesheet" type="text/css" href="css/flaticon.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <!-- favicon links -->
-    <link rel="shortcut icon" type="image/png" href="images/header/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PG Search Tree</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <!-- preloader Start -->
-    <div id="preloader">
-        <div id="status"><img src="images/header/loadinganimation.gif" id="preloader_image" alt="loader">
-        </div>
+
+  <!-- navbar code starts -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+    <a class="navbar-brand" href="index.html">PG Search Tree</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#signupModal">SignUp</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- Top Scroll End -->
-    <!-- Header Wrapper Start -->
-    <div class="jp_top_header_img_wrapper">
-        <div class="jp_slide_img_overlay"></div>
-        <div class="gc_main_menu_wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    
-                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-xs hidden-sm full_width">
-                        <div class="gc_header_wrapper">
-                            <div class="gc_logo">
-                                <a href="#"><img src="images/header/logo.png" alt="Logo" title="Job Pro" class="img-responsive"></a>
-                            </div>
-                        </div>
-                    </div>
+  </nav>
+  <!-- navbar code ends -->
 
-                    <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 center_responsive">
-                        <div class="header-area hidden-menu-bar stick" id="sticker">
-
-                            <!-- mainmenu start -->
-                            <div class="mainmenu">
-                                
-                                <ul class="float_left">
-                                    <li class="gc_main_navigation parent"><a href="#" class="gc_main_navigation">Contact</a></li>
-                                </ul>
-                            </div>
-                            <!-- mainmenu end -->
-
-                            <!-- mobile menu area start -->
-                            <header class="mobail_menu">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-xs-6 col-sm-6">
-                                            <div class="gc_logo">
-                                                <a href="#"><img src="images/header/logo.png" alt="Logo" title="Grace Church"></a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xs-6 col-sm-6">
-                                            <div class="cd-dropdown-wrapper">
-                                                <a class="house_toggle" href="#0">
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.177 31.177" style="enable-background:new 0 0 31.177 31.177;" xml:space="preserve" width="25px" height="25px"><g><g><path class="menubar" d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z" fill="#ffffff"/></g><g><path class="menubar" d="M30.23,9.126H12.069c-0.49,0-0.888-0.398-0.888-0.888c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,8.729,30.72,9.126,30.23,9.126z" fill="#ffffff"/></g><g><path class="menubar" d="M30.23,16.477H0.946c-0.489,0-0.887-0.398-0.887-0.888c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,16.079,30.72,16.477,30.23,16.477z" fill="#ffffff"/></g><g><path class="menubar" d="M30.23,23.826H12.069c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,23.43,30.72,23.826,30.23,23.826z" fill="#ffffff"/></g><g><path class="menubar" d="M30.23,31.177H0.946c-0.489,0-0.887-0.396-0.887-0.887c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.398,0.888,0.888C31.118,30.78,30.72,31.177,30.23,31.177z" fill="#ffffff"/></g></g></svg>
-													</a>
-                                                <nav class="cd-dropdown">
-                                                    <h2><a href="#">Job<span>Pro</span></a></h2>
-                                                    <a href="#0" class="cd-close">Close</a>
-                                                    <ul class="cd-dropdown-content">
-                                                        <li>
-                                                            <a href="#">login</a>
-                                                            <!-- .cd-secondary-dropdown -->
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Signup</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Contact</a>
-                                                        </li>
-                                                    </ul>
-                                                </nav>                                         
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- .cd-dropdown-wrapper -->
-                            </header>
-                        </div>
-                    </div>
-                    <!-- mobile menu area end -->
-                    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 hidden-sm hidden-xs">
-                        <div class="jp_navi_right_btn_wrapper">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-user"></i>&nbsp; SIGN UP</a></li>
-                                <li><a href="#"><i class="fa fa-sign-in"></i>&nbsp; LOGIN</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+   <!-- Modal for Login -->
+   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalTitle">
+              Login
+            </h5>
             </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="login_email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="login_password" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="remember_me">
+                  <label for="rememberMeCheck" class="form-check-label">Remember Me</label>
+                </div>
+                <button class="btn btn-primary" type="submit">Login</button>
+              </form>
+          </div>
         </div>
-
-        <div class="jp_banner_heading_cont_wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="jp_job_heading_wrapper">
-                            <div class="jp_job_heading">
-                                <h1><span>Search Tree</span>, destination for PG search.</h1>
-                                <p>Don't roam for PG's around you. We made Searching best PG easy.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-
-                        <div class="jp_header_form_wrapper">
-                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                <input type="text" placeholder="locality name or area name">
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                <div class="jp_form_location_wrapper">
-                                    <i class="fa fa-dot-circle-o first_icon"></i><select>
-								<option>Chennai</option>
-								<option>Banglore</option>
-								<option>Madurai</option>
-							</select><i class="fa fa-angle-down second_icon"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                <div class="jp_form_exper_wrapper">
-                                    <i class="fa fa-dot-circle-o first_icon"></i><select>
-                                <option>Male</option>
-								<option>Female</option>
-							</select><i class="fa fa-angle-down second_icon"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                                <div class="jp_form_btn_wrapper">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-search"></i> Find</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="jp_banner_main_jobs_wrapper">
-                            <!-- <div class="jp_banner_main_jobs">
-                                <ul>
-                                    <li><i class="fa fa-tags"></i> Trending Keywords :</li>
-                                    <li><a href="#">ui designer,</a></li>
-                                    <li><a href="#">developer,</a></li>
-                                    <li><a href="#">senior</a></li>
-                                    <li><a href="#">it company,</a></li>
-                                    <li><a href="#">design,</a></li>
-                                    <li><a href="#">call center</a></li>
-                                </ul>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="jp_banner_jobs_categories_wrapper">
-            <div class="container">
-                <div class="jp_top_jobs_category_wrapper jp_job_cate_left_border jp_job_cate_left_border_bottom">
-                    <div class="jp_top_jobs_category">
-                        <i class="fa fa-code"></i>
-                        <h3><a href="#">Easy Booking</a></h3>
-                    </div>
-                </div>
-                <div class="jp_top_jobs_category_wrapper jp_job_cate_left_border_bottom">
-                    <div class="jp_top_jobs_category">
-                        <i class="fa fa-laptop"></i>
-                        <h3><a href="#">1000+ PG's</a></h3>
-                    </div>
-                </div>
-                <div class="jp_top_jobs_category_wrapper jp_job_cate_left_border_bottom">
-                    <div class="jp_top_jobs_category">
-                        <i class="fa fa-bar-chart"></i>
-                        <h3><a href="#">Easy Cancellation</a></h3>
-                    </div>
-                </div>
-                <div class="jp_top_jobs_category_wrapper jp_job_cate_left_border_res">
-                    <div class="jp_top_jobs_category">
-                        <i class="fa fa-medkit"></i>
-                        <h3><a href="#">User Friendly</a></h3>
-                    </div>
-                </div>
-                <div class="jp_top_jobs_category_wrapper">
-                    <div class="jp_top_jobs_category">
-                        <i class="fa fa-university"></i>
-                        <h3><a href="#">Affordable Price</a></h3>
-                    </div>
-                </div>
-                <div class="jp_top_jobs_category_wrapper">
-                    <div class="jp_top_jobs_category">
-                        <i class="fa fa-th-large"></i>
-                        <h3><a href="#">Easy Shifting</a></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  
+    <!-- Modal for SignUp -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModall" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              
+              <div class="modal-header">
+                <h5 class="modal-title" id="signupModalTitle">
+                  Signup 
+                </h5>
+              </div>
+  
+              <div class="modal-body">
+                <form action="">
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="signup_username" placeholder="username">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="signup_email" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="signup_password" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                      <input type="password" class="form-control" id="signup_cnfrm_password" placeholder="Confirm Password">
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="terms_check">
+                    <label for="termsCheck" class="form-check-label">I accept the terms and condition of the Search Tree.</label>
+                  </div>
+                  <button class="btn btn-primary" type="submit">signup</button>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Header Wrapper End -->
-
-
-    <!-- jp tittle slider Wrapper End -->
-    <!-- jp first sidebar Wrapper Start -->
-    <div class="jp_first_sidebar_main_wrapper">
+  <!-- search section code starts -->
+  <header id="search-section">
+    <div class="dark-overlay">
+      <div class="search-inner">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                    <div class="row">                        
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="cc_featured_product_main_wrapper">
-                                <div class="jp_hiring_heading_wrapper jp_job_post_heading_wrapper">
-                                    <h2>Popular Searches</h2>
-                                </div>
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="active"><a href="#best" aria-controls="best" role="tab" data-toggle="tab">4+ Sharing</a></li>
-                                    <li role="presentation"><a href="#hot" aria-controls="hot" role="tab" data-toggle="tab">3 Sharing</a></li>
-                                    <li role="presentation"><a href="#trand" aria-controls="trand" role="tab" data-toggle="tab">2 Sharing</a></li>
-                                    <li role="presentation"><a href="#best" aria-controls="best" role="tab" data-toggle="tab">Single Rooms</a></li>
-                                </ul>
-                            </div>
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="best">
-                                    <div class="ss_featured_products">
-                                        <div class="owl-carousel owl-theme">
-                                            <div class="item" data-hash="zero">
+          
+          <div class="col-lg-12">
+            <h1 class="display-4"><strong><span class="search-title">Search Tree</span></strong>, Your destination for PG search.</h1>
+              <div class="d-flex flex-row">
+                    <h5>Don't roam for the best PG's around you, we made it easy.</h5>
+              </div>
+            </div>
+          
+          <div class="col-lg-9">
+            <div class="card bg-dark card-form">
+              <div class="card-body">
+                  <form class="search-form">
+                      
+                      <div class="form-row">
+                        <div class="form-group col-md-3">
+                          <select id="cityInput" class="form-control">
+                            <option selected>Chennai</option>
+                            <option>Banglore</option>
+                            <option>Hyderabad</option>
+                          </select>
+                        </div>
 
-                                                <div class="jp_job_post_main_wrapper_cont">
-                                                    <div class="jp_job_post_main_wrapper">
-                                                        <div class="row">
-                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                <div class="jp_job_post_side_img">
-                                                                    <img src="images/content/job_post_img1.jpg" alt="post_img" />
-                                                                </div>
-                                                                <div class="jp_job_post_right_cont">
-                                                                    <h4>Thiruvanmiyur Boys PG</h4>
-                                                                    <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                    <ul>
-                                                                        <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                        <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                <div class="jp_job_post_right_btn_wrapper">
-                                                                    <ul>
-                                                                        <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                        <li><a href="#">Know More</a></li>
-                                                                        <li><a href="#">Availability</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="jp_job_post_keyword_wrapper">
-                                                        <ul>
-                                                            <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                            <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                            <li><a href="#">Thiruvanmiyur,</a></li>
-                                                            <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                                <div class="jp_job_post_main_wrapper_cont jp_job_post_main_wrapper_cont2">
-                                                        <div class="jp_job_post_main_wrapper">
-                                                                <div class="row">
-                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                        <div class="jp_job_post_side_img">
-                                                                            <img src="images/content/job_post_img2.jpg" alt="post_img" />
-                                                                        </div>
-                                                                        <div class="jp_job_post_right_cont">
-                                                                            <h4>Thiruvanmiyur Boys PG</h4>
-                                                                            <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                            <ul>
-                                                                                <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                                <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                        <div class="jp_job_post_right_btn_wrapper">
-                                                                            <ul>
-                                                                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                                <li><a href="#">Know More</a></li>
-                                                                                <li><a href="#">Availability</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="jp_job_post_keyword_wrapper">
-                                                                <ul>
-                                                                    <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                                    <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">Thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                                </ul>
-                                                            </div>
-                                                </div>
-                                                <div class="jp_job_post_main_wrapper_cont jp_job_post_main_wrapper_cont2">
-                                                        <div class="jp_job_post_main_wrapper">
-                                                                <div class="row">
-                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                        <div class="jp_job_post_side_img">
-                                                                            <img src="images/content/job_post_img3.jpg" alt="post_img" />
-                                                                        </div>
-                                                                        <div class="jp_job_post_right_cont">
-                                                                            <h4>Thiruvanmiyur Boys PG</h4>
-                                                                            <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                            <ul>
-                                                                                <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                                <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                        <div class="jp_job_post_right_btn_wrapper">
-                                                                            <ul>
-                                                                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                                <li><a href="#">Know More</a></li>
-                                                                                <li><a href="#">Availability</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="jp_job_post_keyword_wrapper">
-                                                                <ul>
-                                                                    <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                                    <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">Thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                                </ul>
-                                                            </div>
-                                                </div>
-
-                                                <div class="jp_job_post_main_wrapper_cont jp_job_post_main_wrapper_cont2">
-                                                    <div class="jp_job_post_main_wrapper">
-                                                        <div class="row">
-                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                <div class="jp_job_post_side_img">
-                                                                    <img src="images/content/job_post_img4.jpg" alt="post_img" />
-                                                                </div>
-                                                                <div class="jp_job_post_right_cont">
-                                                                    <h4>Thiruvanmiyur Boys PG</h4>
-                                                                    <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                    <ul>
-                                                                        <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                        <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                <div class="jp_job_post_right_btn_wrapper">
-                                                                    <ul>
-                                                                        <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                        <li><a href="#">Know More</a></li>
-                                                                        <li><a href="#">Availability</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="jp_job_post_keyword_wrapper">
-                                                        <ul>
-                                                            <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                            <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                            <li><a href="#">Thiruvanmiyur,</a></li>
-                                                            <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                                <div class="jp_job_post_main_wrapper_cont jp_job_post_main_wrapper_cont2">
-                                                    <div class="jp_job_post_main_wrapper">
-                                                        <div class="row">
-                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                <div class="jp_job_post_side_img">
-                                                                    <img src="images/content/job_post_img5.jpg" alt="post_img" />
-                                                                </div>
-                                                                <div class="jp_job_post_right_cont">
-                                                                    <h4>Thiruvanmiyur Boys PG</h4>
-                                                                    <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                    <ul>
-                                                                        <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                        <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                <div class="jp_job_post_right_btn_wrapper">
-                                                                    <ul>
-                                                                        <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                        <li><a href="#">Know More</a></li>
-                                                                        <li><a href="#">Availability</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="jp_job_post_keyword_wrapper">
-                                                        <ul>
-                                                            <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                            <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                            <li><a href="#">Thiruvanmiyur,</a></li>
-                                                            <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="item" data-hash="one">
-                                                <div class="jp_job_post_main_wrapper_cont">
-                                                    <div class="jp_job_post_main_wrapper">
-                                                        <div class="row">
-                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                <div class="jp_job_post_side_img">
-                                                                    <img src="images/content/job_post_img1.jpg" alt="post_img" />
-                                                                </div>
-                                                                <div class="jp_job_post_right_cont">
-                                                                    <h4>Thiruvanmiyur Boys PG</h4>
-                                                                    <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                    <ul>
-                                                                        <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                        <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                <div class="jp_job_post_right_btn_wrapper">
-                                                                    <ul>
-                                                                        <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                        <li><a href="#">Know More</a></li>
-                                                                        <li><a href="#">Availability</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="jp_job_post_keyword_wrapper">
-                                                        <ul>
-                                                            <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                            <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                            <li><a href="#">Thiruvanmiyur,</a></li>
-                                                            <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                                <div class="jp_job_post_main_wrapper_cont jp_job_post_main_wrapper_cont2">
-                                                    <div class="jp_job_post_main_wrapper">
-                                                        <div class="row">
-                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                <div class="jp_job_post_side_img">
-                                                                    <img src="images/content/job_post_img2.jpg" alt="post_img" />
-                                                                </div>
-                                                                <div class="jp_job_post_right_cont">
-                                                                    <h4>Thiruvanmiyur Boys PG</h4>
-                                                                    <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                    <ul>
-                                                                        <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                        <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                <div class="jp_job_post_right_btn_wrapper">
-                                                                    <ul>
-                                                                        <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                        <li><a href="#">Know More</a></li>
-                                                                        <li><a href="#">Availability</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="jp_job_post_keyword_wrapper">
-                                                        <ul>
-                                                            <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                            <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                            <li><a href="#">Thiruvanmiyur,</a></li>
-                                                            <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                                <div class="jp_job_post_main_wrapper_cont jp_job_post_main_wrapper_cont2">
-                                                    <div class="jp_job_post_main_wrapper">
-                                                        <div class="row">
-                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                <div class="jp_job_post_side_img">
-                                                                    <img src="images/content/job_post_img3.jpg" alt="post_img" />
-                                                                </div>
-                                                                <div class="jp_job_post_right_cont">
-                                                                    <h4>Thiruvanmiyur Boys PG</h4>
-                                                                    <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                    <ul>
-                                                                        <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                        <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                <div class="jp_job_post_right_btn_wrapper">
-                                                                    <ul>
-                                                                        <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                        <li><a href="#">Know More</a></li>
-                                                                        <li><a href="#">Availability</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="jp_job_post_keyword_wrapper">
-                                                        <ul>
-                                                            <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                            <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                            <li><a href="#">Thiruvanmiyur,</a></li>
-                                                            <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                                <div class="jp_job_post_main_wrapper_cont jp_job_post_main_wrapper_cont2">
-                                                        <div class="jp_job_post_main_wrapper">
-                                                                <div class="row">
-                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                        <div class="jp_job_post_side_img">
-                                                                            <img src="images/content/job_post_img4.jpg" alt="post_img" />
-                                                                        </div>
-                                                                        <div class="jp_job_post_right_cont">
-                                                                            <h4>Thiruvanmiyur Boys PG</h4>
-                                                                            <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                            <ul>
-                                                                                <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                                <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                        <div class="jp_job_post_right_btn_wrapper">
-                                                                            <ul>
-                                                                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                                <li><a href="#">Know More</a></li>
-                                                                                <li><a href="#">Availability</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="jp_job_post_keyword_wrapper">
-                                                                <ul>
-                                                                    <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                                    <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">Thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                                </ul>
-                                                            </div>
-                                                </div>
-                                                <div class="jp_job_post_main_wrapper_cont jp_job_post_main_wrapper_cont2">
-                                                        <div class="jp_job_post_main_wrapper">
-                                                                <div class="row">
-                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                        <div class="jp_job_post_side_img">
-                                                                            <img src="images/content/job_post_img5.jpg" alt="post_img" />
-                                                                        </div>
-                                                                        <div class="jp_job_post_right_cont">
-                                                                            <h4>Thiruvanmiyur Boys PG</h4>
-                                                                            <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                            <ul>
-                                                                                <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                                <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                        <div class="jp_job_post_right_btn_wrapper">
-                                                                            <ul>
-                                                                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                                <li><a href="#">Know More</a></li>
-                                                                                <li><a href="#">Availability</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="jp_job_post_keyword_wrapper">
-                                                                <ul>
-                                                                    <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                                    <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">Thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                                </ul>
-                                                            </div>
-                                                </div>
-                                            </div>
-                                            <div class="item" data-hash="two">
-                                                <div class="jp_job_post_main_wrapper_cont">
-                                                        <div class="jp_job_post_main_wrapper">
-                                                                <div class="row">
-                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                        <div class="jp_job_post_side_img">
-                                                                            <img src="images/content/job_post_img1.jpg" alt="post_img" />
-                                                                        </div>
-                                                                        <div class="jp_job_post_right_cont">
-                                                                            <h4>Thiruvanmiyur Boys PG</h4>
-                                                                            <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                            <ul>
-                                                                                <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                                <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                        <div class="jp_job_post_right_btn_wrapper">
-                                                                            <ul>
-                                                                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                                <li><a href="#">Know More</a></li>
-                                                                                <li><a href="#">Availability</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="jp_job_post_keyword_wrapper">
-                                                                <ul>
-                                                                    <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                                    <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">Thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                                </ul>
-                                                            </div>
-                                                </div>
-                                                <div class="jp_job_post_main_wrapper_cont jp_job_post_main_wrapper_cont2">
-                                                        <div class="jp_job_post_main_wrapper">
-                                                                <div class="row">
-                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                        <div class="jp_job_post_side_img">
-                                                                            <img src="images/content/job_post_img2.jpg" alt="post_img" />
-                                                                        </div>
-                                                                        <div class="jp_job_post_right_cont">
-                                                                            <h4>Thiruvanmiyur Boys PG</h4>
-                                                                            <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                            <ul>
-                                                                                <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                                <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                        <div class="jp_job_post_right_btn_wrapper">
-                                                                            <ul>
-                                                                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                                <li><a href="#">Know More</a></li>
-                                                                                <li><a href="#">Availability</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="jp_job_post_keyword_wrapper">
-                                                                <ul>
-                                                                    <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                                    <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">Thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                                </ul>
-                                                            </div>
-                                                </div>
-                                                <div class="jp_job_post_main_wrapper_cont jp_job_post_main_wrapper_cont2">
-                                                        <div class="jp_job_post_main_wrapper">
-                                                                <div class="row">
-                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                        <div class="jp_job_post_side_img">
-                                                                            <img src="images/content/job_post_img3.jpg" alt="post_img" />
-                                                                        </div>
-                                                                        <div class="jp_job_post_right_cont">
-                                                                            <h4>Thiruvanmiyur Boys PG</h4>
-                                                                            <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                            <ul>
-                                                                                <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                                <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                        <div class="jp_job_post_right_btn_wrapper">
-                                                                            <ul>
-                                                                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                                <li><a href="#">Know More</a></li>
-                                                                                <li><a href="#">Availability</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="jp_job_post_keyword_wrapper">
-                                                                <ul>
-                                                                    <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                                    <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">Thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                                </ul>
-                                                            </div>
-                                                </div>
-                                                <div class="jp_job_post_main_wrapper_cont jp_job_post_main_wrapper_cont2">
-                                                        <div class="jp_job_post_main_wrapper">
-                                                                <div class="row">
-                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                        <div class="jp_job_post_side_img">
-                                                                            <img src="images/content/job_post_img4.jpg" alt="post_img" />
-                                                                        </div>
-                                                                        <div class="jp_job_post_right_cont">
-                                                                            <h4>Thiruvanmiyur Boys PG</h4>
-                                                                            <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                            <ul>
-                                                                                <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                                <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                        <div class="jp_job_post_right_btn_wrapper">
-                                                                            <ul>
-                                                                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                                <li><a href="#">Know More</a></li>
-                                                                                <li><a href="#">Availability</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="jp_job_post_keyword_wrapper">
-                                                                <ul>
-                                                                    <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                                    <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">Thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                                </ul>
-                                                            </div>
-                                                </div>
-                                                <div class="jp_job_post_main_wrapper_cont jp_job_post_main_wrapper_cont2">
-                                                        <div class="jp_job_post_main_wrapper">
-                                                                <div class="row">
-                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                        <div class="jp_job_post_side_img">
-                                                                            <img src="images/content/job_post_img5.jpg" alt="post_img" />
-                                                                        </div>
-                                                                        <div class="jp_job_post_right_cont">
-                                                                            <h4>Thiruvanmiyur Boys PG</h4>
-                                                                            <p>Thiruvalluvar Nagar 4th street, Thiruvanmiyur</p>
-                                                                            <ul>
-                                                                                <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                                                <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                        <div class="jp_job_post_right_btn_wrapper">
-                                                                            <ul>
-                                                                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                                <li><a href="#">Know More</a></li>
-                                                                                <li><a href="#">Availability</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="jp_job_post_keyword_wrapper">
-                                                                <ul>
-                                                                    <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                                    <li><a href="#">best pg thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">Thiruvanmiyur,</a></li>
-                                                                    <li><a href="#">deluxe pg in thiruvanmiyur</a></li>
-                                                                </ul>
-                                                            </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                    <div class="video_nav_img_wrapper">
-                                        <div class="video_nav_img">
-                                            <ul>
-                                                <li><a class="button secondary url owl_nav" href="#zero">1</a></li>
-                                                <li><a class="button secondary url owl_nav" href="#one">2</a></li>
-                                                <li><a class="button secondary url owl_nav active" href="#two">3</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                
-                            </div>
+                        <div class="form-group col-md-5">
+                          <input type="text" class="form-control" id="inputArea" placeholder="Local or area name">
                         </div>
                         
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="jp_first_right_sidebar_main_wrapper">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="jp_add_resume_wrapper">
-                                    <div class="jp_add_resume_img_overlay"></div>
-                                    <div class="jp_add_resume_cont">
-                                        <img src="images/content/resume_logo.png" alt="logo" />
-                                        <h4>Get Best PG with Best Foods, amenities and infrastructure around you.</h4>
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-plus-circle"></i> &nbsp;Create Profile</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="jp_spotlight_main_wrapper">
-                                    <div class="spotlight_header_wrapper">
-                                        <h4>Best of Best</h4>
-                                    </div>
-                                    <div class="jp_spotlight_slider_wrapper">
-                                        <div class="owl-carousel owl-theme">
-                                            <div class="item">
-                                                <div class="jp_spotlight_slider_img_Wrapper">
-                                                    <img src="images/content/spotlight_img.jpg" alt="spotlight_img" />
-                                                </div>
-                                                <div class="jp_spotlight_slider_cont_Wrapper">
-                                                    <h4>Thiruvanmiyur Boys PG</h4>
-                                                    <p>Thiruvalluvar Nagar 4th street</p>
-                                                    <ul>
-                                                        <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                        <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="jp_spotlight_slider_btn_wrapper">
-                                                    <div class="jp_spotlight_slider_btn">
-                                                        <ul>
-                                                            <li><a href="#"><i class="fa fa-plus-circle"></i> &nbsp;Know Details</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="jp_spotlight_slider_img_Wrapper">
-                                                    <img src="images/content/spotlight_img.jpg" alt="spotlight_img" />
-                                                </div>
-                                                <div class="jp_spotlight_slider_cont_Wrapper">
-                                                        <h4>Thiruvanmiyur Boys PG</h4>
-                                                        <p>Thiruvalluvar Nagar 4th street</p>
-                                                        <ul>
-                                                            <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                            <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="jp_spotlight_slider_btn_wrapper">
-                                                        <div class="jp_spotlight_slider_btn">
-                                                            <ul>
-                                                                <li><a href="#"><i class="fa fa-plus-circle"></i> &nbsp;Know Details</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="jp_spotlight_slider_img_Wrapper">
-                                                    <img src="images/content/spotlight_img.jpg" alt="spotlight_img" />
-                                                </div>
-                                                <div class="jp_spotlight_slider_cont_Wrapper">
-                                                        <h4>Thiruvanmiyur Boys PG</h4>
-                                                        <p>Thiruvalluvar Nagar 4th street</p>
-                                                        <ul>
-                                                            <li><i class="fa fa-cc-paypal"></i>&nbsp; INR 4500-6000 </li>
-                                                            <li><i class="fa fa-map-marker"></i>&nbsp;Thiruvanmiyur</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="jp_spotlight_slider_btn_wrapper">
-                                                        <div class="jp_spotlight_slider_btn">
-                                                            <ul>
-                                                                <li><a href="#"><i class="fa fa-plus-circle"></i> &nbsp;Know Details</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="jp_rightside_job_categories_wrapper">
-                                    <div class="jp_rightside_job_categories_heading">
-                                        <h4>PG by Food</h4>
-                                    </div>
-                                    <div class="jp_rightside_job_categories_content">
-                                        <ul>
-                                            <li><i class="fa fa-caret-right"></i> <a href="#">Tamil Nadu <span>(214)</span></a></li>
-                                            <li><i class="fa fa-caret-right"></i> <a href="#">Andhra Foods <span>(514)</span></a></li>
-                                            <li><i class="fa fa-caret-right"></i> <a href="#">Kerala Foods <span>(554)</span></a></li>
-                                            <li><i class="fa fa-caret-right"></i> <a href="#">North Indian Foods <span>(457)</span></a></li>
-                                            <li><i class="fa fa-caret-right"></i> <a href="#">Vegetarian Foods <span>(1254)</span></a></li>
-                                            <li><i class="fa fa-caret-right"></i> <a href="#">Non-Vegetarian Foods <span>(554)</span></a></li>
-                                            <li><i class="fa fa-caret-right"></i> <a href="#">Karnataka Foods <span>(350)</span></a></li>
-                                            <li><i class="fa fa-caret-right"></i> <a href="#">No Food<span>(221)</span></a></li>
-                                            <li><i class="fa fa-plus-circle"></i> <a href="#">View All Categories</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                        <div class="form-group col-md-2">
+                          <select id="inputGender" class="form-control">
+                              <option selected>Male</option>
+                              <option>Female</option>
+                          </select>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- jp first sidebar Wrapper End -->
-    <!-- jp counter Wrapper Start -->
+                        
+                        <div class="form-group col-md-2">
+                          <input type="submit" class="btn btn-outline-light btn-block">
+                        </div>
+                      </div>
 
-   
-    
-    <!-- jp Client Wrapper End -->
-   
-    <!-- jp pricing Wrapper End -->
-    <!-- jp downlord Wrapper Start -->
-    
-    <!-- jp downlord Wrapper End -->
-    <!-- jp Newsletter Wrapper Start -->
-    <div class="jp_main_footer_img_wrapper">
-        <div class="jp_newsletter_img_overlay_wrapper"></div>
-        
-        <!-- jp Newsletter Wrapper End -->
-        <!-- jp footer Wrapper Start -->
-        <div class="jp_footer_main_wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="jp_footer_logo_wrapper">
-                            <div class="jp_footer_logo">
-                                <a href="#"><img src="images/content/resume_logo.png" alt="footer_logo"/></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="jp_footer_three_sec_main_wrapper">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="jp_footer_first_cont_wrapper">
-                                <div class="jp_footer_first_cont">
-                                    <h2>Who We Are</h2>
-                                    <p>We are young startup team with energetic minds to make the PG findings more easier.<br><br>We are spoke for doing things, not for just speaking.</p>
-                                    <ul>
-                                        <li><i class="fa fa-plus-circle"></i> <a href="#">READ MORE</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="jp_footer_condidate_wrapper jp_footer_condidate_wrapper2">
-                                <div class="jp_footer_condidate">
-                                    <h2>For PG Hunters</h2>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Add your Profile</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Find Best PG</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Easy Transaction</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Best Food</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> All Sharings</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Payment</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> E-bills</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="jp_footer_condidate_wrapper jp_footer_condidate_wrapper3">
-                                <div class="jp_footer_condidate">
-                                    <h2>For PG Owners</h2>
-                                    <ul>
-                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Add your Profile</a></li>
-                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Find Best PG</a></li>
-                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Easy Transaction</a></li>
-                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Best Food</a></li>
-                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> All Sharings</a></li>
-                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Payment</a></li>
-                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> E-bills</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="jp_footer_condidate_wrapper jp_footer_condidate_wrapper4">
-                                <div class="jp_footer_condidate">
-                                    <h2>Information</h2>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> About Us</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Terms & Conditions</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Privacy Policy</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Careers with Us</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Sitemap</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> FAQs</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="jp_bottom_footer_Wrapper">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="jp_bottom_footer_left_cont">
-                                        <p>© 2017-18 Search Tree. All Rights Reserved.</p>
-                                    </div>
-                                    <div class="jp_bottom_top_scrollbar_wrapper">
-                                        <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="jp_bottom_footer_right_cont">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li class="hidden-xs"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                            <li class="hidden-xs"><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  </form>
+              </div>
             </div>
+          </div>
+
         </div>
+      </div>
     </div>
-    <!-- jp footer Wrapper End -->
-    <!--main js file start-->
-    <script src="js/jquery_min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.menu-aim.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/custom.js"></script>
-    <!--main js file end-->
+  </header>
+  <!-- search section ends -->
+
+  <section id="features-section" class="bg-dark">
+    <div class="container">
+      <div class="row py-4">
+
+        <div class="col-md-4 bg-light text-center px-5">
+          <img src="./img/logo-dark.png" alt="" class="rounded float-left img-fluid">
+          <h3>Easy Booking</h3>
+          <p>we provide the most easy way of booking your place at the PG</p>
+        </div>
+
+        <div class="col-md-4 bg-light text-center px-5">
+            <img src="./img/logo-dark.png" alt="" class="float-left img-fluid">
+            <h3>Easy Deposit Refund</h3>
+            <p>No more worry about the Deposits and delayed refunds from the Owner, we assure you getting back your refund. </p>
+        </div>
+
+        <div class="col-md-4 bg-light text-center px-5">
+            <img src="./img/logo-dark.png" alt="" class="float-left img-fluid">
+            <h3>1000+ Quality PGs</h3>
+            <p>we show only the best PGs near you. We are here to find the PG that is built for you.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="py-4">
+            <h1 class="h3">PG Search Tree</h1>
+            <p>copyright &copy; 2018</p>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
-
-<!-- Mirrored from www.webstrot.com/html/jobpro/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Jan 2018 11:30:29 GMT -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </html>
